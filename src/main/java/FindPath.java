@@ -4,12 +4,10 @@ import java.util.Scanner;
 
 public class FindPath {
 
-    private static Scanner scanner;
-
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws FileNotFoundException, AbstractFindPathInputReaderException, InterruptedException {
         boolean isRunning = true;
-        scanner = new Scanner(System.in);
-        String inputType = "";
+        Scanner scanner = new Scanner(System.in);
+        String inputType;
         String filename;
 
         while (isRunning) {
@@ -23,9 +21,11 @@ public class FindPath {
                     System.out.println("Specify the file name:");
                     filename = scanner.nextLine();
                     File file = new File(System.getProperty("user.dir") + "\\mazes\\" + filename);
-                    if (file.exists()) {
+                    if (file.exists() && filename.endsWith(".txt") && file.length() != 0) {
+                        System.out.println("File exists!");
                         FindPathInputReaderFile findPathInputReaderFile = new FindPathInputReaderFile(file, scanner);
-                        System.out.println("File exists");
+                    } else {
+                        System.out.println("File does not exist, is not a .txt extension or is empty! Going back to menu...");
                     }
                     break;
                 case "2":

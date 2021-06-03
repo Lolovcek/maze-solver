@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33352da0-3dfc-438b-9a71-e234ebc67c7c" name="Default Changelist" comment="" />
+    <list default="true" id="33352da0-3dfc-438b-9a71-e234ebc67c7c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/AbstractFindPathInputReaderException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AbstractFindPathInputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AbstractFindPathInputReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FindPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FindPathInputReaderFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindPathInputReaderFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FindPathInputReaderStdIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindPathInputReaderStdIn.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,9 +22,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -34,11 +46,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jakub\Documents\GitHub\maze-solver\src\main\java" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="FindPath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -64,6 +82,18 @@
       <updated>1621254332529</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
