@@ -16,6 +16,7 @@ public class FindPathInputReaderFile extends AbstractFindPathInputReader {
 
     /**
      * Reads the file line by line and adds it to the temporary arraylist map
+     *
      * @throws FileNotFoundException - file error
      */
     public void readFile() throws FileNotFoundException {
@@ -28,6 +29,7 @@ public class FindPathInputReaderFile extends AbstractFindPathInputReader {
     /**
      *
      * converts the matrix into a 2D integer array
+     *
      * @throws InterruptedException - timeout for the map generation (2 seconds)
      * @throws AbstractFindPathInputReaderException - if an invalid symbol is in the map
      */

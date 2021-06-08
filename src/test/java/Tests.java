@@ -4,10 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.Scanner;
 
-class FindPathInputReaderFileTest {
+class Tests {
 
     File testFile1 = new File(System.getProperty("user.dir") + "\\mazes\\testMaze1.txt");
     File testFile2 = new File(System.getProperty("user.dir") + "\\mazes\\testMaze2.txt");

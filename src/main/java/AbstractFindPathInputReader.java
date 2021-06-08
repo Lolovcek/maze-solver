@@ -48,10 +48,10 @@ public abstract class AbstractFindPathInputReader {
      */
     public boolean validateMap(ArrayList<String> map) {
         if(checkMap(map)) {
-            System.out.println("Map is valid! Printing parsed map to console...\n");
+            System.out.println("Map is valid!\n");
             return true;
         } else {
-            System.out.println("Map is invalid! Check your input / file...\n");
+            System.out.println("Map is invalid!\n");
             return false;
         }
     }

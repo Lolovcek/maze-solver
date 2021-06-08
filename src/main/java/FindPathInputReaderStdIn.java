@@ -69,6 +69,7 @@ public class FindPathInputReaderStdIn extends AbstractFindPathInputReader {
     /**
      *
      * converts the matrix into a 2D integer array
+     *
      * @throws InterruptedException - timeout for the map generation (2 seconds)
      * @throws AbstractFindPathInputReaderException - if an invalid symbol is in the map
      */
@@ -81,6 +82,7 @@ public class FindPathInputReaderStdIn extends AbstractFindPathInputReader {
     }
 
     /**
+     * Checks if the number in string format is really a number
      *
      * @param number - in string format
      * @return if it is a number or not
