@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33352da0-3dfc-438b-9a71-e234ebc67c7c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/AbstractFindPathInputReaderException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AbstractFindPathInputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AbstractFindPathInputReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FindPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindPath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FindPathInputReaderFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindPathInputReaderFile.java" afterDir="false" />
@@ -23,7 +22,9 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -46,6 +47,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -57,8 +61,20 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jakub\Documents\GitHub\maze-solver\src\main\java" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.FindPathInputReaderFileTest">
     <configuration name="FindPath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FindPath" />
       <module name="maze-solver" />
@@ -66,9 +82,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FindPathInputReaderFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maze-solver" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FindPathInputReaderFileTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindPathInputReaderFileTest.parseMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maze-solver" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FindPathInputReaderFileTest" />
+      <option name="METHOD_NAME" value="parseMap" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindPathInputReaderFileTest.shouldFindShortestPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maze-solver" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FindPathInputReaderFileTest" />
+      <option name="METHOD_NAME" value="shouldFindShortestPath" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindPathInputReaderFileTest.shouldParseMap1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maze-solver" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FindPathInputReaderFileTest" />
+      <option name="METHOD_NAME" value="shouldParseMap1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FindPathInputReaderFileTest" />
+        <item itemvalue="JUnit.FindPathInputReaderFileTest.shouldParseMap1" />
         <item itemvalue="Application.FindPath" />
+        <item itemvalue="JUnit.FindPathInputReaderFileTest.shouldFindShortestPath" />
+        <item itemvalue="JUnit.FindPathInputReaderFileTest.parseMap" />
       </list>
     </recent_temporary>
   </component>

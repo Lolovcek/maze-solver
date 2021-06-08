@@ -16,12 +16,6 @@ public class FindPathInputReaderStdIn extends AbstractFindPathInputReader {
      */
     public FindPathInputReaderStdIn(Scanner scanner) throws InterruptedException, AbstractFindPathInputReaderException {
         this.scanner = scanner;
-        checkSize();
-        getStdIn();
-        createMatrix();
-        super.showMap(this.mapMatrix);
-        boolean[][] processed = new boolean[mapMatrix.length][mapMatrix[0].length];
-        //System.out.println("Shortest distance is: " + super.explore(this.mapMatrix, processed));
     }
 
 
@@ -29,7 +23,7 @@ public class FindPathInputReaderStdIn extends AbstractFindPathInputReader {
      * First the user needs to input the dimensions of the maze
      * so the program will know how long should the next inputs be
      */
-    private void checkSize() {
+    public void checkSize() {
         String line;
         while(true) {
             System.out.println("Specify the dimensions (eg. 5x7):");
@@ -58,7 +52,7 @@ public class FindPathInputReaderStdIn extends AbstractFindPathInputReader {
     /**
      * Handle user input if the map is being put in manually
      */
-    private void getStdIn() {
+    public void getStdIn() {
         String line;
         int lineCounter = 0;
         while (lineCounter < this.mapHeight) {
@@ -78,7 +72,7 @@ public class FindPathInputReaderStdIn extends AbstractFindPathInputReader {
      * @throws InterruptedException - timeout for the map generation (2 seconds)
      * @throws AbstractFindPathInputReaderException - if an invalid symbol is in the map
      */
-    private void createMatrix() throws InterruptedException, AbstractFindPathInputReaderException {
+    public void createMatrix() throws InterruptedException, AbstractFindPathInputReaderException {
         if (super.validateMap(this.map)) {
             this.mapMatrix = super.parseMap(this.map);
         } else {
@@ -103,4 +97,7 @@ public class FindPathInputReaderStdIn extends AbstractFindPathInputReader {
         return true;
     }
 
+    public int[][] getMapMatrix() {
+        return mapMatrix;
+    }
 }

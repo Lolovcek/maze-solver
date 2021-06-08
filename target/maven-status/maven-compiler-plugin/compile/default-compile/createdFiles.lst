@@ -1,0 +1,6 @@
+Point.class
+AbstractFindPathInputReaderException.class
+FindPath.class
+FindPathInputReaderFile.class
+FindPathInputReaderStdIn.class
+AbstractFindPathInputReader.class

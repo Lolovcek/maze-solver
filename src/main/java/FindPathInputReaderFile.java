@@ -1,7 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class FindPathInputReaderFile extends AbstractFindPathInputReader {
@@ -10,23 +9,16 @@ public class FindPathInputReaderFile extends AbstractFindPathInputReader {
     private Scanner scanner;
     private int[][] mapMatrix;
 
-    public FindPathInputReaderFile(File file, Scanner scanner) throws FileNotFoundException, AbstractFindPathInputReaderException, InterruptedException {
+    public FindPathInputReaderFile(File file, Scanner scanner) {
         this.file = file;
         this.scanner = scanner;
-        readFile();
-        createMatrix();
-        super.showMap(this.mapMatrix);
-        boolean[][] processed = new boolean[mapMatrix.length][mapMatrix[0].length];
-        Point[][] points = new Point[mapMatrix.length][mapMatrix[0].length];
-        points = super.explore(this.mapMatrix, processed, points);
-        System.out.println(super.reconstructPath());
     }
 
     /**
      * Reads the file line by line and adds it to the temporary arraylist map
      * @throws FileNotFoundException - file error
      */
-    private void readFile() throws FileNotFoundException {
+    public void readFile() throws FileNotFoundException {
         this.scanner = new Scanner(this.file);
         while(this.scanner.hasNextLine()) {
             this.map.add(this.scanner.nextLine());
@@ -39,7 +31,7 @@ public class FindPathInputReaderFile extends AbstractFindPathInputReader {
      * @throws InterruptedException - timeout for the map generation (2 seconds)
      * @throws AbstractFindPathInputReaderException - if an invalid symbol is in the map
      */
-    private void createMatrix() throws InterruptedException, AbstractFindPathInputReaderException {
+    public void createMatrix() throws InterruptedException, AbstractFindPathInputReaderException {
         if (super.validateMap(this.map)) {
             this.mapMatrix = super.parseMap(this.map);
         } else {
@@ -47,4 +39,11 @@ public class FindPathInputReaderFile extends AbstractFindPathInputReader {
         }
     }
 
+    public int[][] getMapMatrix() {
+        return mapMatrix;
+    }
+
+    public ArrayList<String> getMap() {
+        return map;
+    }
 }
